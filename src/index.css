@@ -1,13 +1,13 @@
 /* CSS Custom Properties */
 :root {
-  --white: #FFFFFF;
-  --tan-1: #FBF9F6;
-  --tan-2: #E7E2DD;
-  --tan-3: #E2D9D1;
-  --tan-4: #D3C1AE;
-  --orange: #F67F00;
-  --text-light: #968c84;
-  --text-dark: #615954;
+  --white: #0329ff;
+  --tan-1: #5594eb;
+  --tan-2: #000000;
+  --tan-3: #000000;
+  --tan-4: #00ff3c;
+  --orange: #f68700;
+  --text-light: #000000;
+  --text-dark: #000000;
 }
 
 *, *:before, *:after {
@@ -15,6 +15,10 @@
 }
 
 body {
+  background-image: url('/Users/shanestanley/code/school_projects/geck/src/Screenshot 2023-11-30 at 2.05.01 PM.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
