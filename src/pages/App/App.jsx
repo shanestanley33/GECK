@@ -3,8 +3,11 @@ import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
-import NewOrderPage from '../NewOrderPage/NewOrderPage';
-import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
+import PlantPage from '../PlantPage/PlantPage';
+import AddPlantPage from '../AddPlantPage/AddPlantPage';
+import UpdatePlantPage from '../UpdatePlantPage/UpdatePlantPage';
+import DeletePlantPage from '../DeletePlantPage/DeletePlantPage';
+import CommentsPage from '../CommentsPage/CommentsPage';
 import NavBar from '../../components/NavBar/NavBar';
 
 export default function App() {
@@ -17,8 +20,12 @@ export default function App() {
             <NavBar user={user} setUser={setUser} />
             <Routes>
               {/* Route components in here */}
-              <Route path="/orders/new" element={<NewOrderPage />} />
-              <Route path="/orders" element={<OrderHistoryPage />} />
+              <Route path="/plants" element={<PlantPage />} />
+              <Route path="/plants/add" element={<AddPlantPage />} />
+              <Route path="/plants/update" element={<UpdatePlantPage />} />
+              <Route path="/plants/delete" element={<DeletePlantPage />} />
+              <Route path="/plants/comments" element={<CommentsPage />} />
+
             </Routes>
           </>
           :
