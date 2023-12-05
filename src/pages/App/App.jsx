@@ -25,7 +25,6 @@ export default function App() {
               <Route path="/plants/update" element={<UpdatePlantPage />} />
               <Route path="/plants/delete" element={<DeletePlantPage />} />
               <Route path="/plants/comments" element={<CommentsPage />} />
-
             </Routes>
           </>
           :

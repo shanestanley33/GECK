@@ -9,7 +9,7 @@ export default function PlantPage() {
 
   return (
     <>
-      <h1>PlantPage</h1>
+      <h1>Plant Page</h1>
     </>
   );
 }

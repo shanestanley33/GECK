@@ -1,5 +1,5 @@
 export default function UpdatePlantPage() {
     return (
-      <h1>UpdatePlantPage</h1>
+      <h1>Update Plant Page</h1>
     );
   }

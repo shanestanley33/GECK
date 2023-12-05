@@ -1,5 +1,5 @@
 export default function DeletePlantPage() {
     return (
-      <h1>DeletePlantPage</h1>
+      <h1>Delete Plant Page</h1>
     );
   }
