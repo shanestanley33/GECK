@@ -34,6 +34,10 @@ const plantSchema = new Schema({
     additional_notes: {
         type: String,
         required: false,
+    },
+    imageUrl: {
+        type: String,
+        required: true,
     }
 });
 

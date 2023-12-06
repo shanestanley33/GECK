@@ -11,7 +11,7 @@ router.get('/check-token',ensureLoggedIn, usersCtrl.checkToken);
 
 
 //POST
-
+router.post('/', usersCtrl.createUser)
 router.post('/login', usersCtrl.login)
 
 // DELETE
