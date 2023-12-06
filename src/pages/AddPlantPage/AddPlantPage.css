@@ -1,0 +1,10 @@
+form {
+/* display: table-caption; */
+display: flex;
+flex-direction: column;
+}
+
+h2 {
+    background-color: rgb(171, 215, 254);
+    width: 30%;
+}

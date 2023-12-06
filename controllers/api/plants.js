@@ -15,11 +15,10 @@ async function createPlant(req, res) {
   plant.userUsing = req.user._id;
   try {
     await plant.save();
-    res.redirect(`/plants/${plant._id}`);
-  } catch (e) {
-    console.log(e.message);
-    res.redirect(`/plants/new`);
-  }
+    res.json(plant)
+  } catch (error) {
+    console.log("Error Creating New Plant", error);
+    res.json() }
 }
 
 async function plantIndex(req, res) {
