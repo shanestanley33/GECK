@@ -3,15 +3,16 @@ const bcrypt = require('bcrypt')
 const User = require('../../models/user');
 
 module.exports = {
-  create,
+  createUser,
   login,
-  checkToken
+  checkToken,
+  createJWT
 };
 
-async function create(req, res) {
+async function createUser(req, res) {
   try {
     // Add the user to the db
-    const user = await User.create(req.body);
+    const user = await User.createUser(req.body);
     const token = createJWT(user);
     res.json(token);
   } catch (err) {
@@ -47,3 +48,4 @@ function createJWT(user) {
     { expiresIn: '24h' }
   );
 }
+
