@@ -1,20 +1,36 @@
-import { checkToken } from "../../utilities/users-service.js";
-import PlantDetail from '../../components/PlantDetail/PlantDetail.jsx'
-import { useState } from "react";
+import React, {useEffect, useState} from 'react';
+import { getAllPlants } from '../../utilities/plants-api';
+import { Link } from 'react-router-dom';
+// import PlantDetail from '../../components/PlantDetail/PlantDetail.jsx'
 
 export default function MainPlantPage() {
   const [plants, setPlants] = useState([])
-  const plantEntry = plants.map((plant, idx) => <PlantDetail plant={plant} index={idx} key={idx}/>)
 
-  
-  // async function handleCheckToken() {
-  //   const expDate = await checkToken()
-  //   console.log(expDate)
-  // }
+  useEffect(() => {
+    const fetchInfo = async () => {
+    try {
+      const plantInfo = await getAllPlants()
+      setPlants(plantInfo)
+    } catch (error) {
+      console.error('Main Plant Page fetch error', error)
+    }
+  }
+  fetchInfo()
+}, [])
 
   return (
-      <ul>
-        {plantEntry}
-      </ul>
+      <div>
+        <ul>
+          {plants.map((plant) => (
+            <li key={plant._id}>
+              <Link to={`/plants/${plant._id}`}>
+                <div>
+                  <p>{plant.name}</p>
+                </div>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
   );
 }

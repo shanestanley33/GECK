@@ -22,11 +22,9 @@ async function createPlant(req, res) {
 }
 
 async function MainPlantPage(req, res) {
-  let plantQuery = req.query.name ? {name: new RegExp(req.query.name, 'i')} : {};
-  const plants = await Plant.find(plantQuery);
-  res.render('plants/index', {
-    plants,
-    nameSearch: req.query.name
+  const plants = await Plant.find({});
+  res.json('plants/index', {
+    plants
   });
 }
 

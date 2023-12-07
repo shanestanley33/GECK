@@ -5,11 +5,11 @@ const ensureLoggedIn = require('../../config/ensureLoggedIn');
 
 //GET
 
-router.get('/', usersCtrl.MainPlantPage);
+router.get('/', ensureLoggedIn, usersCtrl.MainPlantPage);
 
 //PUT
 
-router.put('/:id', ensureLoggedIn, usersCtrl.updatePlant)
+router.put('/:id', ensureLoggedIn, usersCtrl.updatePlant);
 
 //POST
 
@@ -17,5 +17,6 @@ router.post('/', ensureLoggedIn, usersCtrl.createPlant);
 
 // DELETE
 
-router.delete('/:id', ensureLoggedIn, usersCtrl.deletePlant)
+router.delete('/:id', ensureLoggedIn, usersCtrl.deletePlant);
+
 module.exports = router;
