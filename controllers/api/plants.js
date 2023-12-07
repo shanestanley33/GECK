@@ -1,9 +1,8 @@
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt')
-const User = require('../../models/plants');
-
+const Plant = require('../../models/plants')
 module.exports = {
-  plantIndex, //read
+  MainPlantPage, //read
   createPlant,
   updatePlant,
   deletePlant
@@ -11,6 +10,7 @@ module.exports = {
 
 async function createPlant(req, res) {
   const plant = new Plant(req.body);
+  console.log(plant)
   // Assign the logged in user's id
   plant.userUsing = req.user._id;
   try {
@@ -21,7 +21,7 @@ async function createPlant(req, res) {
     res.json() }
 }
 
-async function plantIndex(req, res) {
+async function MainPlantPage(req, res) {
   let plantQuery = req.query.name ? {name: new RegExp(req.query.name, 'i')} : {};
   const plants = await Plant.find(plantQuery);
   res.render('plants/index', {
@@ -47,7 +47,8 @@ async function updatePlant(req, res) {
 }
 
 async function deletePlant(req, res) {
-  await Plant.findOneAndDelete(
+  const id = req.params.id
+  await Plant.findByIdAndDelete(
     {_id: req.params.id, userUsing: req.user._id}
   );
   res.redirect('/plants');

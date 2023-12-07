@@ -9,7 +9,7 @@ export default function NavBar({ user, setUser }) {
 
   return (
     <nav>
-      <Link to="/plants">Plant Index</Link>
+      <Link to="/plants">Main Plant Page</Link>
       &nbsp; | &nbsp;
       <Link to="/plants/add">Add Plant</Link>
       &nbsp; | &nbsp;

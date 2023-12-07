@@ -5,7 +5,7 @@ const ensureLoggedIn = require('../../config/ensureLoggedIn');
 
 //GET
 
-router.get('/', usersCtrl.plantIndex);
+router.get('/', usersCtrl.MainPlantPage);
 
 //PUT
 

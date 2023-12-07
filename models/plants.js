@@ -35,10 +35,10 @@ const plantSchema = new Schema({
         type: String,
         required: false,
     },
-    imageUrl: {
-        type: String,
-        required: true,
-    }
+    // imageUrl: {
+    //     type: String,
+    //     required: true,
+    // }
 });
 
 module.exports = mongoose.model('plant', plantSchema);

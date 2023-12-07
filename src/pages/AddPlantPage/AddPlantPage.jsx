@@ -39,7 +39,7 @@ export default function AddPlantPage() {
       />
       <input 
         name = 'species'
-        value={newPlant.name}
+        value={newPlant.species}
         onChange={handleChange}
         placeholder='species'
         required
@@ -47,7 +47,7 @@ export default function AddPlantPage() {
       />
       <input 
         name = 'variety'
-        value={newPlant.name}
+        value={newPlant.variety}
         onChange={handleChange}
         placeholder='variety'
         required
@@ -55,15 +55,14 @@ export default function AddPlantPage() {
       />
       <input 
         name = 'harvest_time_in_days'
-        value={newPlant.name}
+        value={newPlant.harvest_time_in_days}
         onChange={handleChange}
         placeholder='harvest time'
         required
-        pattern='.{3,}'
       />
       <input 
         name = 'climate'
-        value={newPlant.name}
+        value={newPlant.climate}
         onChange={handleChange}
         placeholder='humidity/temp '
         required
@@ -71,7 +70,7 @@ export default function AddPlantPage() {
       />
       <input 
         name = 'description'
-        value={newPlant.name}
+        value={newPlant.description}
         onChange={handleChange}
         placeholder='description'
         required
@@ -79,7 +78,7 @@ export default function AddPlantPage() {
       />
       <input 
         name = 'soil_type'
-        value={newPlant.name}
+        value={newPlant.soil_type}
         onChange={handleChange}
         placeholder='nutrient levels'
         required
@@ -87,7 +86,7 @@ export default function AddPlantPage() {
       />
       <input 
         name = 'additional_notes'
-        value={newPlant.name}
+        value={newPlant.additional_notes}
         onChange={handleChange}
         placeholder='additional notes'
         pattern='.{3,}'
