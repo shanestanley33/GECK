@@ -2,10 +2,11 @@ const express = require('express');
 const router = express.Router();
 const usersCtrl = require('../../controllers/api/plants');
 const ensureLoggedIn = require('../../config/ensureLoggedIn');
+const user = require('../../models/user');
 
 //GET
-
-router.get('/', ensureLoggedIn, usersCtrl.MainPlantPage);
+router.get('/:id', ensureLoggedIn, usersCtrl.plantShow)
+router.get('/', ensureLoggedIn, usersCtrl.mainPlantPage);
 
 //PUT
 

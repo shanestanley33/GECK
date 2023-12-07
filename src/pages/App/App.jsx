@@ -9,6 +9,7 @@ import UpdatePlantPage from '../UpdatePlantPage/UpdatePlantPage';
 import DeletePlantPage from '../DeletePlantPage/DeletePlantPage';
 import CommentsPage from '../CommentsPage/CommentsPage';
 import NavBar from '../../components/NavBar/NavBar';
+import PlantDetail from '../../components/PlantDetail/PlantDetail'
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -25,6 +26,7 @@ export default function App() {
               <Route path="/plants/update" element={<UpdatePlantPage />} />
               <Route path="/plants/delete" element={<DeletePlantPage />} />
               <Route path="/plants/comments" element={<CommentsPage />} />
+              <Route path="/plants/:id" element={<PlantDetail />}/>
             </Routes>
           </>
           :

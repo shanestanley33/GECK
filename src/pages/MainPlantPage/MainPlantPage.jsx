@@ -10,6 +10,7 @@ export default function MainPlantPage() {
     const fetchInfo = async () => {
     try {
       const plantInfo = await getAllPlants()
+      console.log(plantInfo)
       setPlants(plantInfo)
     } catch (error) {
       console.error('Main Plant Page fetch error', error)

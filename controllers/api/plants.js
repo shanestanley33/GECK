@@ -1,11 +1,11 @@
-const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt')
 const Plant = require('../../models/plants')
+
 module.exports = {
-  MainPlantPage, //read
+  mainPlantPage, //read
   createPlant,
   updatePlant,
-  deletePlant
+  deletePlant,
+  plantShow
 };
 
 async function createPlant(req, res) {
@@ -21,11 +21,23 @@ async function createPlant(req, res) {
     res.json() }
 }
 
-async function MainPlantPage(req, res) {
-  const plants = await Plant.find({});
-  res.json('plants/index', {
-    plants
-  });
+async function mainPlantPage(req, res) {
+  try {
+    const plants = await Plant.find({});
+    res.status(200).json(plants);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+}
+
+async function plantShow(req, res) {
+  try {
+    const plantDetails = await Plant.find({})
+    res.status(200).json(plantDetails)
+  } catch (error) {
+    res.status(500).json({ error: 'Internal Server Error' })
+  }
 }
 
 async function updatePlant(req, res) {
