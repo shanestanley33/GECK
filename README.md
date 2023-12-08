@@ -1,7 +1,7 @@
 <div align="center">
 
 # G.E.C.K.
-![header](https://raw.githubusercontent.com/shanestanley33/geck/main/src/Screenshot-login.png)
+![header](https://raw.githubusercontent.com/shanestanley33/geck/main/src/UK_Growing-Underground-scaled.jpg)
 
 ### Built By:
 
@@ -40,19 +40,19 @@ Click the following link to be redirected to the ERD Diagram to see the behind t
 
 ### Log in
 
-![login](/Users/shanestanley/code/school_projects/geck/src/Screenshot-login.png)
+![login](https://raw.githubusercontent.com/shanestanley33/geck/main/src/Screenshot-login.png)
 
 ### Add plant
 
-![add](/Users/shanestanley/code/school_projects/geck/src/Screenshot-addplant.png)
+![add](https://raw.githubusercontent.com/shanestanley33/geck/main/src/Screenshot-addplant.png)
 
 ### Main plant page
 
-![main](/Users/shanestanley/code/school_projects/geck/src/Screenshot-mainplantpage.png)
+![main](https://raw.githubusercontent.com/shanestanley33/geck/main/src/Screenshot-mainplantpage.png)
 
 ### Update/Edit page
 
-![update details](/Users/shanestanley/code/school_projects/geck/src/Screenshot_update:detailpage.png)
+![update details](https://raw.githubusercontent.com/shanestanley33/geck/main/src/Screenshot_update%3Adetailpage.png)
 
 ## Favorite code snippet
 Conditional (ternary) operator
