@@ -79,7 +79,7 @@ export default function AuthPage({ setUser }) {
     Deploying the application on Heroku
 
 
-## Future
+## Future Plans
 - [ ] Mobile/native support
 - [ ] Making the main database available to all as a read only.
 - [ ] Adding images to add plant page
