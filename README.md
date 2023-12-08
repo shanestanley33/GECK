@@ -1,7 +1,7 @@
 <div align="center">
 
 # G.E.C.K.
-<img src="https://raw.githubusercontent.com/shanestanley33/geck/main/src/Screenshot%202023-11-30%20at%202.05.01%E2%80%AFPM.png">
+![header](https://raw.githubusercontent.com/shanestanley33/geck/main/src/Screenshot%202023-11-30%20at%202.05.01%E2%80%AFPM.png")
 
 ### Built By:
 
@@ -20,7 +20,7 @@
 
 ### DESCRIPTION: 
 
-G.E.C.K. is a database of all food growing plants and info on how to grow them in a vertical farm environment.
+G.E.C.K. is a database of all food growing plants and info on how to grow them in a vertical farm environment. (it is short for Garden of Eden Creation Kit a reference to fallout 3)
 
 **_A vertical farming and hydroponics growing database_**
 
@@ -40,19 +40,19 @@ Click the following link to be redirected to the ERD Diagram to see the behind t
 
 ### Log in
 
-<img width="1185" src="/Users/shanestanley/code/school_projects/geck/src/Screenshot-login.png">
+![login](/Users/shanestanley/code/school_projects/geck/src/Screenshot-login.png")
 
 ### Add plant
 
-<img width="1185" src="/Users/shanestanley/code/school_projects/geck/src/Screenshot-addplant.png">
+![add](/Users/shanestanley/code/school_projects/geck/src/Screenshot-addplant.png")
 
 ### Main plant page
 
-<img width="1185" src="/Users/shanestanley/code/school_projects/geck/src/Screenshot-mainplantpage.png">
+![main](/Users/shanestanley/code/school_projects/geck/src/Screenshot-mainplantpage.png")
 
 ### Update/Edit page
 
-<img width="1185" src="/Users/shanestanley/code/school_projects/geck/src/Screenshot_update:detailpage.png">
+![update details](/Users/shanestanley/code/school_projects/geck/src/Screenshot_update:detailpage.png")
 
 ## Favorite code snippet
 Conditional (ternary) operator
