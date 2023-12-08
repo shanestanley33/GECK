@@ -40,7 +40,19 @@ Click the following link to be redirected to the ERD Diagram to see the behind t
 
 ### Log in
 
-<img width="1185" src="/Users/shanestanley/code/school_projects/geck/src/Screenshot 2023-12-07 at 9.36.54 AM.png">
+<img width="1185" src="/Users/shanestanley/code/school_projects/geck/src/Screenshot-login.png">
+
+### Add plant
+
+<img width="1185" src="/Users/shanestanley/code/school_projects/geck/src/Screenshot-addplant.png">
+
+### Main plant page
+
+<img width="1185" src="/Users/shanestanley/code/school_projects/geck/src/Screenshot-mainplantpage.png">
+
+### Update/Edit page
+
+<img width="1185" src="/Users/shanestanley/code/school_projects/geck/src/Screenshot_update:detailpage.png">
 
 ## Favorite code snippet
 Conditional (ternary) operator
@@ -61,18 +73,19 @@ export default function AuthPage({ setUser }) {
   );
 }
 
-
-
 ```
 
 ## Challenges 
-### Deployment and Hosting on Heroku
-    Deploying the application on platforms like Heroku
+    Deploying the application on Heroku
+
+
 ## Future
-- [ ] Mobile support
+- [ ] Mobile/native support
+- [ ] Making the main database available to all as a read only.
+- [ ] Adding images to add plant page
+- [ ] adding an offline mode for users with choppy internet.
 - [ ] Integrate an API.
 - [ ] Adding comments
 - [ ] Expand on the app in regards to suggested equipment, tools, and instructionals on multiple building material methods for infrastructure.
-- [ ] User can favourite comments
 - [ ] Expand on the overall CSS design
 - [ ] Refactor code 
