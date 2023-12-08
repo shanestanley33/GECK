@@ -1,7 +1,7 @@
 <div align="center">
 
 # G.E.C.K.
-![header](https://raw.githubusercontent.com/shanestanley33/geck/main/src/Screenshot%202023-11-30%20at%202.05.01%E2%80%AFPM.png)
+![header](https://raw.githubusercontent.com/shanestanley33/geck/main/src/Screenshot-login.png)
 
 ### Built By:
 
