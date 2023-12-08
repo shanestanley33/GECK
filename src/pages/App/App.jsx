@@ -12,6 +12,8 @@ import NavBar from '../../components/NavBar/NavBar';
 import PlantDetail from '../../components/PlantDetail/PlantDetail'
 
 export default function App() {
+  const [plant, setPlant] = useState(null)
+
   const [user, setUser] = useState(getUser());
 
   return (
@@ -21,12 +23,12 @@ export default function App() {
             <NavBar user={user} setUser={setUser} />
             <Routes>
               {/* Route components in here */}
-              <Route path="/plants" element={<MainPlantPage />} />
+              <Route path="/plants" element={<MainPlantPage setPlant={setPlant}/>} />
               <Route path="/plants/add" element={<AddPlantPage />} />
               <Route path="/plants/update" element={<UpdatePlantPage />} />
               <Route path="/plants/delete" element={<DeletePlantPage />} />
               <Route path="/plants/comments" element={<CommentsPage />} />
-              <Route path="/plants/:id" element={<PlantDetail />}/>
+              <Route path="/plants/:id" element={<PlantDetail plant={plant} />}/>
             </Routes>
           </>
           :

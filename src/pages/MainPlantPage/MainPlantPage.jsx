@@ -1,10 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import { getAllPlants } from '../../utilities/plants-api';
-import { Link } from 'react-router-dom';
+import { getAllPlants, deletePlant } from '../../utilities/plants-api';
+import { useNavigate } from 'react-router-dom';
 // import PlantDetail from '../../components/PlantDetail/PlantDetail.jsx'
 
-export default function MainPlantPage() {
+export default function MainPlantPage({setPlant}) {
+
   const [plants, setPlants] = useState([])
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchInfo = async () => {
@@ -19,16 +21,26 @@ export default function MainPlantPage() {
   fetchInfo()
 }, [])
 
+  async function handleDelete(id) {
+      const deletedplant = await deletePlant(id)
+      console.log(deletedplant)
+      const updatedPlants = plants.filter(plant => plant._id !== deletedplant._id)
+      setPlants(updatedPlants)
+    }
+  
+  function handleClick(plant) {
+    setPlant(plant)
+    navigate(`/plants/${plant._id}`)
+  }
   return (
       <div>
         <ul>
           {plants.map((plant) => (
-            <li key={plant._id}>
-              <Link to={`/plants/${plant._id}`}>
+            <li onClick={ () => handleClick(plant)} key={plant._id}>
                 <div>
                   <p>{plant.name}</p>
                 </div>
-              </Link>
+              <button onClick={ () => {handleDelete(plant._id)}}>Delete</button>
             </li>
           ))}
         </ul>

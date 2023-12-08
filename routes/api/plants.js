@@ -7,7 +7,7 @@ const user = require('../../models/user');
 //GET
 router.get('/:id', ensureLoggedIn, usersCtrl.plantShow)
 router.get('/', ensureLoggedIn, usersCtrl.mainPlantPage);
-
+router.get('/:id/edit', ensureLoggedIn, usersCtrl.editPlant)
 //PUT
 
 router.put('/:id', ensureLoggedIn, usersCtrl.updatePlant);

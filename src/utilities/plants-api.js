@@ -11,13 +11,13 @@ export function getAllPlants(allPlants) {
 }
 
 export function getPlantDetail(id) {
-    return sendRequest(`BASE_URL/${id}`)
+    return sendRequest(`${BASE_URL}/${id}`)
 }
 
-export function updatePlant(editPlant) {
-    return sendRequest(BASE_URL, 'PUT', editPlant)
+export function updatePlant(editPlant, id) {
+    return sendRequest(`${BASE_URL}/${id}`, 'PUT', editPlant)
 }
 
-export function deletePlant(compostPlant) {
-    return sendRequest(BASE_URL, 'DELETE', compostPlant)
+export function deletePlant(id) {
+    return sendRequest(`${BASE_URL}/${id}`, 'DELETE')
 }
