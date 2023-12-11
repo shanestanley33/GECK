@@ -49,5 +49,8 @@
   "proxy": "http://127.0.0.1:3001",
   "devDependencies": {
     "webpack-cli": "^5.1.4"
+  },
+  "resolutions": {
+    "webpack": "5.41.1"
   }
 }
