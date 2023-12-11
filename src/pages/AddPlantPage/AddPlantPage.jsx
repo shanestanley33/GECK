@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import * as plantsAPI from '../../utilities/plants-api';
 import './AddPlantPage.css';
+import React from 'react';
 export default function AddPlantPage() {
   
   const [newPlant, setNewPlant] = useState({

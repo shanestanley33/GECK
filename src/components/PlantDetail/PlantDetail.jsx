@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import React from 'react';
 import './PlantDetail.css';
 import { useParams } from 'react-router-dom';
 import { getPlantDetail, updatePlant } from '../../utilities/plants-api';
