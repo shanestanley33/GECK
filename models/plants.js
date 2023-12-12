@@ -1,7 +1,6 @@
 const { text } = require('express');
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-
 const plantSchema = new Schema({
     name: {
         type: String,
@@ -9,27 +8,27 @@ const plantSchema = new Schema({
     },
     species: {
         type: String,
-        required: true,
+        required: false,
     },
     variety: {
         type: String,
-        required: true,
+        required: false,
     },
     harvest_time_in_days: {
         type: Number,
-        required: true,
+        required: false,
     },
     climate: {
         type: String,
-        required: true,
+        required: false,
     },
     description: {
         type: String,
-        required: true,
+        required: false,
     },
     soil_type: {
         type: String,
-        required: true,
+        required: false,
     },
     additional_notes: {
         type: String,
