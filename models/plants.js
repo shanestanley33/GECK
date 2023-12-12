@@ -42,3 +42,4 @@ const plantSchema = new Schema({
 });
 
 module.exports = mongoose.model('plant', plantSchema);
+
