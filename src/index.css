@@ -15,8 +15,8 @@
 }
 
 body {
-  background: url('/Users/shanestanley/code/school_projects/geck/src/UK_Growing-Underground-scaled.jpg') no-repeat center center fixed;
-  background-size: cover;
+  /* background: url('/Users/shanestanley/code/school_projects/geck/src/UK_Growing-Underground-scaled.jpg') no-repeat center center fixed; */
+  /* background-size: cover; */
   max-width:60%;
   margin-left: 20%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
