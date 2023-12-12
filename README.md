@@ -16,7 +16,7 @@
 
 **_Click the following link to be redirected to the live version of the code!_**
 
-## [G.E.C.K.](herroku link placeholder)
+## [G.E.C.K.](https://geck-0fc186548c13.herokuapp.com/)
 
 ### DESCRIPTION: 
 
