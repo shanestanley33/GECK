@@ -51,7 +51,7 @@ export default function PlantDetail(props) {
     <li>harvest time in days:  {plant.harvest_time_in_days}</li>,
     <li>climate:  {plant.climate}</li>,
     <li>description:  {plant.description}</li>,
-    <li> soil type:  {plant.soil_type}</li>,
+    <li>soil type:  {plant.soil_type}</li>,
     <li>additional notes:  {plant.additional_notes}</li>,
 
     <h2>Edit Plant Details</h2>
