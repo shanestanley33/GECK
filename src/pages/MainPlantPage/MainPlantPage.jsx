@@ -35,8 +35,8 @@ export default function MainPlantPage({ setPlant }) {
     <div>
       <ul>
         {plants.map((plant) => (
-          <li onClick={() => handleClick(plant)} key={plant._id}>
-            <div>
+          <li key={plant._id}>
+            <div onClick={() => handleClick(plant)}>
               <p>{plant.name}</p>
             </div>
             <div>

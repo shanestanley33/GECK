@@ -25,8 +25,9 @@ async function createPlant(req, res) {
   
   async function mainPlantPage(req, res) {
     try {
-      const plants = await Plant.find({});
-      res.status(200).json(plants);
+      const userId = req.user._id;
+      const userPlants = await Plant.find({ userId });
+      res.status(200).json(userPlants);
     } catch (error) {
       console.error(error);
       res.status(500).json({ error: 'Internal Server Error' });
