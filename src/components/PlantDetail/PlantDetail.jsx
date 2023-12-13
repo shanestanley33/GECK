@@ -81,7 +81,7 @@ export default function PlantDetail(props) {
         pattern='.{3,}'
       />
       <input 
-        name = 'harvest time in days'
+        name = 'harvest_time_in_days'
         value={updatedPlantInfo.harvest_time_in_days}
         onChange={handleChange}
         placeholder='harvest time in days'
